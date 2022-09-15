@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: aktiv-grotesk, sans-serif !important;
+}
+
+.left-container {
+  padding: 20px 0px 0px 40px;
+  width: 60%;
+}
+.left-container li {
+  font-size: 24px;
+}
+
+.right-container {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 40% !important;
+  background: linear-gradient(180deg, #c7efef, #c0dcf9);
+  padding: 100px 50px 30px 50px;
+}
+
+.right-img-container, .left-img-container {
+  max-width: 320px;
+}
+.right-img-container p, .left-img-container p {
+  top: 20px;
+  left: 105px;
+  width: 150px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-text {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.login-cred {
+  font-size: 20px;
+}
+
+uk-form-label {
+  font-size: 16px !important;
+}
+
+.gatedasset {
+  width: 290px !important;
+}
+
+.gatedasset-foreground {
+  top: 50px;
+  right: 20px;
+}
+
+.report-insight {
+  font-weight: 500;
+}
+
+.gatedasset-background {
+  height: 370px !important;
+}
+
+.gartner-heading {
+  font-weight: 500;
+}
+
+.left-quote {
+  transform: scaleX(-1);
+}
+
+.right-quote, .left-quote {
+  height: 30px;
+  width: 30px;
+}
+
+.feedback-text, .read-gartner {
+  font-size: 24px;
+}
+
+.read-gartner-content {
+  font-size: 16px;
+}
+
+.uk-form-label {
+  font-size: 16px !important;
+}
+
+.footer {
+  padding-top: 20px;
+  background-color: #e6e6e6;
+  bottom: 0px;
+}
+.footer li {
+  margin-left: 30px;
+}
+
+.uk-flex-wrap {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 960px) {
+  .left-container {
+    width: 100%;
+    padding: 20px 0px 0px 20px;
+  }
+  .right-container {
+    width: 100% !important;
+    top: 0px;
+    bottom: auto !important;
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .left-img-container p {
+    font-size: 18px;
+  }
+  p, li {
+    font-size: 16px !important;
+  }
+  h2, h4 {
+    font-size: 20px !important;
+  }
+  .report-insight-div {
+    flex-direction: column;
+  }
+  .read-gartner-content {
+    font-size: 12px !important;
+  }
+  .header-text {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+  }
+}/*# sourceMappingURL=styles.css.map */

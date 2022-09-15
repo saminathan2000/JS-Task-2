@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+</head>
+<body>
+    
+    <section class="section">
+        <div class="container">
+            <div class="wrapper">
+                
+                    <div class="left-container ">
+                        <img src="./assets/mf_logo_blue.svg" height="40" width="100" alt="logo"/>
+                        <div class="left-content  uk-margin-large-right ">
+                            <div class="left-img-container uk-align-center uk-margin-remove-bottom uk-margin-large-top uk-display-block uk-hidden@m uk-position-relative">
+                                <img src="./assets/finalgaimg.png" class="uk-align-center uk-margin-remove-bottom" width="280" height="250" alt="finalgaimg"/>
+                                <p class="uk-position-absolute">2021 Gartner® Magic Quadrant™ for Application Security Testing</p>
+                            </div>
+                            <h1 class="header-text uk-padding-large  uk-padding-remove-horizontal">2021 Gartner® Magic Quadrant™ for Application Security Testing</h1>
+                            <p class="uk-text-lead uk-margin-xlarge-bottom">
+                                Download the 2021 Gartner Magic Quadrant for Application Security Testing report to discover why Gartner has named Micro Focus a Magic Quadrant Leader in application security testing—the fastest growing of all tracked information security segments.
+                            </p>
+                            <div class="right-container uk-visible uk-display-none@m">
+                                
+                                <h2 class="uk-margin-remove-bottom">Download your copy now</h2>
+                                <p class="uk-margin-remove-top uk-text-muted">* Required field</p>
+        
+                                <p class="login-cred">Create your login credentials</p>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label uk-text-muted" for="form-stacked-text">First Name*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" onblur="validateName(event,'fnamewarning')" id="fname" type="text" >
+                                    </div>
+                                    <span id="fnamewarning" class="uk-text-danger uk-text-meta"></span>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label uk-text-muted"  for="form-stacked-text">Last Name*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="lname" type="text" onblur="validateName(event,'lnamewarning')">
+                                    </div>
+                                    <span id="lnamewarning" class="uk-text-danger uk-text-meta"></span>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label uk-text-muted" for="form-stacked-text">Email*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" onblur="validateEmail(event)" id="email" type="email" >
+                                    </div>
+                                    <span id="emailwarning" class="uk-text-danger uk-text-meta"></span>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label uk-text-muted" for="form-stacked-text">Phone Number*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" onblur="validateMobile(event)" id="mobile" type="tel" >
+                                    </div>
+                                    <span id="mobilewarning" class="uk-text-danger uk-text-meta"></span>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label uk-text-muted" for="form-stacked-text">Zip Code*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" onblur="validatePincode(event)" id="pincode" type="tel" >
+                                    </div>
+                                    <span id="pincodewarning" class="uk-text-danger uk-text-meta"></span>
+                                </div>
+                                <button onclick="onSubmit()" type="submit" id="form-submit" label="submit" class="uk-button uk-button-primary uk-button-lg uk-margin-top">Next</button>
+                            </div>
+                            <div class="uk-flex report-insight-div uk-margin-large-bottom">
+                                <div class="left-div">
+                                    <h2 class="report-insight">Report insights include:</h2>
+                                    <ul>
+                                        <li>Get an in-depth look at the application security market</li>
+                                        <li>Why Micro Focus Fortify has been named a Leader eight times</li>
+                                        <li>How to evaluate application security vendors</li>
+                                        <li>Why Fortify is the best choice to manage application security risk</li>
+                                    </ul>
+                                </div>
+                                <div class="right-div">
+                                    <div class="gatedasset uk-align-center uk-position-relative">
+                                        <img class="gatedasset-background" src="./assets/backgroundimg.png" alt="gatedasset-background"/>
+                                        <img class="gatedasset-foreground uk-position-absolute" src="./assets/gatedassetscreenshot.png" alt="gatedasset-foreground"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <h2 class="gartner-heading">2021 Gartner Magic Quadrant for Application Security Testing highlights:</h2>
+                                <img class="left-quote" src="./assets/newquotes.svg" alt="quotes"/>
+                                <img class="right-quote uk-align-right" src="./assets/newquotes.svg" alt="quotes"/>
+                                <p class="uk-padding feedback-text uk-padding-remove-vertical uk-margin-remove">
+                                    Fortify on Demand is, hands down, one of the best solutions out there for SAST/DAST.” –Director of Cybersecurity, Finance industry
+                                </p>
+                                <br>
+                                <img class="left-quote" src="./assets/newquotes.svg" alt="quotes"/>
+                                <img class="right-quote uk-align-right" src="./assets/newquotes.svg" alt="quotes"/>
+                                <p class="uk-padding feedback-text uk-padding-remove-vertical uk-margin-remove">
+                                    Highly recommended for holistic application security.” – Sr. Director of Global InfoSec, Services industry
+                                </p>
+                                <p class="read-gartner uk-padding-large uk-padding-remove-horizontal">Read the 2021 Gartner Magic Quadrant or Application Security Testing report today.</p>
+                                <p class="read-gartner-content uk-padding-large uk-padding-remove-horizontal uk-padding-remove-top">
+                                    Gartner and Magic Quadrant are registered trademarks of Gartner, Inc. and/or its affiliates in the U.S. and internationally and is used herein with permission. All rights reserved. Gartner does not endorse any vendor, product or service depicted in its research publications, and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner’s research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose. This graphic was published by Gartner, Inc. as part of a larger research document and should be evaluated in the context of the entire document. The Gartner document is available upon request from Micro Focus. * The Fortify brand was recognized as a Magic Quadrant Leader 8 times over the years under HP, HPE and currently under Micro Focus.
+                                </p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container uk-display-none uk-visible@m">
+                        <div class="right-img-container  uk-position-relative">
+                            <img src="./assets/finalgaimg.png"  alt="finalgaimg"/>
+                            <p class="uk-position-absolute">2021 Gartner® Magic Quadrant™ for Application Security Testing</p>
+                        </div>
+                        <h2 class="uk-margin-remove-bottom">Download your copy now</h2>
+                        <p class="uk-margin-remove-top uk-text-muted">* Required field</p>
+
+                        <p class="login-cred">Create your login credentials</p>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-muted" for="form-stacked-text">First Name*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" onblur="validateName(event,'fnamewarning')" id="fname" type="text" >
+                            </div>
+                            <span id="fnamewarning" class="uk-text-danger uk-text-meta"></span>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-muted"  for="form-stacked-text">Last Name*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="lname" type="text" onblur="validateName(event,'lnamewarning')">
+                            </div>
+                            <span id="lnamewarning" class="uk-text-danger uk-text-meta"></span>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-muted" for="form-stacked-text">Email*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" onblur="validateEmail(event)" id="email" type="email" >
+                            </div>
+                            <span id="emailwarning" class="uk-text-danger uk-text-meta"></span>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-muted" for="form-stacked-text">Phone Number*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" onblur="validateMobile(event)" id="mobile" type="tel" >
+                            </div>
+                            <span id="mobilewarning" class="uk-text-danger uk-text-meta"></span>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label uk-text-muted" for="form-stacked-text">Zip Code*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" onblur="validatePincode(event)" id="pincode" type="tel" >
+                            </div>
+                            <span id="pincodewarning" class="uk-text-danger uk-text-meta"></span>
+                        </div>
+                        <button onclick="onSubmit()" type="submit" id="form-submit" label="submit" class="uk-button uk-button-primary uk-button-lg uk-margin-top">Next</button>
+                    </div>
+
+                    </div>
+
+                    </div>
+                    <div class="footer uk-position-relative">
+                        
+                        <ul class="uk-flex uk-flex-wrap">
+                            <span>Contact Us</span>
+                            <li>
+                                Privacy and Cookie Notice
+                            </li>
+                            <li>
+                                Website Terms of Use 
+                            </li>
+                            <li>
+                                Code of Conduct 
+                            </li>
+                            <li>
+                                Anti-Slavery Statement
+                            </li>
+                            <li>
+                                2020 Micro Focus 
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
+
