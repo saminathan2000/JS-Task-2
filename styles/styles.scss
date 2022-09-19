@@ -9,6 +9,10 @@
         font-size: 24px;
     }
 }
+#form-submit{
+    border-radius: 50px;
+    padding:5px 60px;
+}
 .right-container{
     position: fixed;
     top: 0px;
@@ -86,6 +90,7 @@ height: 370px!important;
     margin-bottom: 0px;
 }
 @media screen and (max-width: 960px){
+    
     .left-container{
         width: 100%;
         padding:20px 0px 0px 20px;

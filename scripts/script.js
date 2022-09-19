@@ -1,5 +1,6 @@
 var isNameValid=isMobileValid=isEmailValid=isPincodeValid=false;
 function validateName(event,warningField){
+    console.log("first")
     if(! /^[A-Za-z]{1,}$/.test(event.target.value)){
         document.getElementById(warningField).innerHTML="Please enter only alphabets";
         isNameValid=false;
